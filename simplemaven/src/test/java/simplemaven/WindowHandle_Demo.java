@@ -48,6 +48,7 @@ driver.findElement(By.xpath("//*[contains(@href,'popup.php')]")).click();
             driver.switchTo().window(MainWindow);
             WebElement mainpageclickherelink = driver.findElement(By.xpath("//a[contains(text(),'Click Here')]"));
             mainpageclickherelink.click();
+            Thread.sleep(1000);
             System.out.println("Testcase executed successfully");
             driver.quit();
             
