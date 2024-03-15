@@ -24,6 +24,7 @@ public class dropdown {
 		for(WebElement option : options) {
 		    if(option.getText().equals("ANTARCTICA")) {
 		        option.click();
+		        System.out.println("option selected");
 		        break;
 		    }
 		}
@@ -34,6 +35,7 @@ public class dropdown {
 		Select fruits = new Select(driver.findElement(By.id("fruits")));
 		fruits.selectByVisibleText("Banana");
 		fruits.selectByIndex(3);
+		System.out.println("options selected");
 		Thread.sleep(1000);
 		System.out.println("Testcase2 executed  successfully");
 		driver.quit();
